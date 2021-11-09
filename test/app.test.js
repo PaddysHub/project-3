@@ -3,7 +3,7 @@ import { fixture, expect } from '@open-wc/testing';
 
 import '../rename-me.js';
 
-describe('RenameMe', () => {
+describe('TrainingCard', () => {
   let element;
   beforeEach(async () => {
     element = await fixture(html`<rename-me></rename-me>`);

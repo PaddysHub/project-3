@@ -1,3 +1,3 @@
-import { RenameMe } from './src/RenameMe.js';
+import { TrainingCard } from './src/TrainingCard.js';
 
-customElements.define(RenameMe.tag, RenameMe);
+customElements.define(TrainingCard.tag, TrainingCard);
