@@ -3,7 +3,7 @@ import { LitElement, html, css } from 'lit';
 
 // EXPORT (so make available to other documents that reference this file) a class, that extends LitElement
 // which has the magic life-cycles and developer experience below added
-export class RenameMe extends LitElement {
+export class TrainingCard extends LitElement {
   // a convention I enjoy so you can change the tag name in 1 place
   static get tag() {
     return 'rename-me';
