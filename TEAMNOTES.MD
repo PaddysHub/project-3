@@ -27,7 +27,7 @@ These are dedicated status check-ins as this is a multi-week project
 
 - Since we will each be creating a card, we will have similar reponsibilities but we wanted to get specific with what we each wanted to do
 
-- Perry: Will be in charge of getting implementing simple-colors since he did that in the last project as well as helping Andrew with basic slot composition for all the cards. 
+- Perry: Will be in charge of implementing simple-colors since he did that in the last project as well as helping Andrew with basic slot composition for all the cards. 
 
 - Khory: Will be looking into accessibility so that when the trading card is scaled down for mobile, the card will adjust to those changes.
 
@@ -35,7 +35,7 @@ These are dedicated status check-ins as this is a multi-week project
 
 - Ethan: Working and learning on the map function to stamp data from an array into the card per the trading card prompt. Ethan will also be focusing on preparing our storybook.  We know this is something that we look at towards the end of the project but we struggled with this in the past and wanted to improve on that aspect of our projects.  
 
--We decided that each of us would spend Sunday/Monday learning up on each of our responsibilities then meet tuesday after class to work on implementation of this tasks.  We also worked Sunday on creating the basic outline of the 4 card elements as well as coloring on each of those cards. Obviously the tasks we have above does not covering everything but that will be specific tasks as the bigger tasks will be worked on as a group during our weekly meetings. 
+-We decided that each of us would spend Sunday/Monday learning up on each of our responsibilities then meet tuesday after class to work on implementation of this tasks.  We also worked Sunday on creating the basic outline of the 4 card elements as well as coloring on each of those cards. Obviously the tasks we have above does not cover everything but that will be specific tasks as the bigger tasks will be worked on as a group during our weekly meetings. 
 
 ### Check-in 3
 - 
