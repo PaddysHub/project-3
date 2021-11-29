@@ -38,7 +38,25 @@ These are dedicated status check-ins as this is a multi-week project
 -We decided that each of us would spend Sunday/Monday learning up on each of our responsibilities then meet tuesday after class to work on implementation of this tasks.  We also worked Sunday on creating the basic outline of the 4 card elements as well as coloring on each of those cards. Obviously the tasks we have above does not cover everything but that will be specific tasks as the bigger tasks will be worked on as a group during our weekly meetings. 
 
 ### Check-in 3
-- 
+- - We started working on the map function to stamp data from an array into our card as mentioned in the prompt. Each element in the array has a name, image, hometown, and major. What needs to be solved is how to print the element data in html. This will most likely be done using the getElementById function. More research needs to be done regarding this. The following code is being used to map the data:
+
+var cardData = [
+    {name:"Ethan",image:"./image/abc.jpg",age:"20",hometown:"Downingtown, PA",major:"Cybersecurity"},
+    {name:"Khory",image:"./image/abc.jpg",age:"tbd",hometown:"tbd",major:"tbd"},
+    {name:"Perry",image:"./image/abc.jpg",age:"tbd",hometown:"tbd",major:"tbd"},
+    {name:"Andrew",image:"./image/abc.jpg",age:"tbd",hometown:"tbd",major:"tbd"},
+]
+
+cardData.map(user=>{
+    console.log (
+        user.name,
+        user.image,
+        user.age,
+        user.hometown,
+        user.major
+    )
+})
+- Note: The html logic still needs to be finished. We are disussing better ways to make our card reusable. This is something we struggled in the past and want to get right. Things as simple as reusable variable names need to be considered. Changes to TradingCard1 will also not commit to github due to an unexpected console statement when outputting a message to the webconsole.
 - 
 ### Check-in 4
 - 
