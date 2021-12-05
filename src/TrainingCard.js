@@ -13,12 +13,22 @@ export class TrainingCard extends LitElement {
   constructor() {
     super();
     this.need = 'all need to succeed';
+    this.name = '1';
+    this.image = '2';
+    this.age = '3';
+    this.powernum = '4';
+    this.power = '5';
   }
 
   // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
   static get properties() {
     return {
       need: { type: String, reflect: true },
+      name: { type: String },
+      image: { type: String },
+      age: { type: String },
+      powernum: { type: String },
+      power: { type: String },
     };
   }
 
@@ -70,6 +80,8 @@ export class TrainingCard extends LitElement {
     return html`
       <h1>Make me awesome</h1>
       <p>Build the future we ${this.need}.</p>
+      <p>Name: ${this.name}</p>
+      <p>Age: ${this.age}</p>
       <slot></slot>
     `;
   }
