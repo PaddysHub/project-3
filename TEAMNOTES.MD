@@ -59,5 +59,5 @@ cardData.map(user=>{
 - Note: The html logic still needs to be finished. We are disussing better ways to make our card reusable. This is something we struggled in the past and want to get right. Things as simple as reusable variable names need to be considered. Changes to TradingCard1 will also not commit to github due to an unexpected console statement when outputting a message to the webconsole.
 - 
 ### Check-in 4
-- 
+- - This week we researched the videos on Hax and how to incorporate the wireframe. We began styling the card, but were slowed down on trying to implement our data from the array. It has definitely taken up alot of our time and we are struggling to figure out where exactly to initialize our array variable and where to map it. We believe mapping the user data will occur within the render function. We plan to meet with the TA or the professor either during class on tuesday or earlier to resolve this. Once that is concluded, we will be smooth sailing towards implementing our card.
 - 
