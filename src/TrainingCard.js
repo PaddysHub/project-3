@@ -13,6 +13,36 @@ export class TrainingCard extends LitElement {
   constructor() {
     super();
     this.need = 'all need to succeed';
+    this.cardData = [
+      {
+        name: 'Ethan',
+        image: './image/abc.jpg',
+        age: '20',
+        hometown: 'Downingtown, PA',
+        major: 'Cybersecurity',
+      },
+      {
+        name: 'Khory',
+        image: './image/abc.jpg',
+        age: 'tbd',
+        hometown: 'tbd',
+        major: 'tbd',
+      },
+      {
+        name: 'Perry',
+        image: './image/abc.jpg',
+        age: 'tbd',
+        hometown: 'tbd',
+        major: 'tbd',
+      },
+      {
+        name: 'Andrew',
+        image: './image/abc.jpg',
+        age: 'tbd',
+        hometown: 'tbd',
+        major: 'tbd',
+      },
+    ];
     this.name = '1';
     this.image = '2';
     this.age = '3';
@@ -24,6 +54,7 @@ export class TrainingCard extends LitElement {
   static get properties() {
     return {
       need: { type: String, reflect: true },
+      cardData: { type: Array },
       name: { type: String },
       image: { type: String },
       age: { type: String },
@@ -79,9 +110,9 @@ export class TrainingCard extends LitElement {
   render() {
     return html`
       <h1>Make me awesome</h1>
-      <p>Build the future we ${this.need}.</p>
-      <p>Name: ${this.name}</p>
-      <p>Age: ${this.age}</p>
+      <ul>
+        ${this.cardData.map(item => html`<li>${item.name}</li>`)}
+      </ul>
       <slot></slot>
     `;
   }
