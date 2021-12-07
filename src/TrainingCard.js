@@ -17,37 +17,32 @@ export class TrainingCard extends LitElement {
       {
         name: 'Ethan',
         image: './image/abc.jpg',
-        age: '20',
-        hometown: 'Downingtown, PA',
-        major: 'Cybersecurity',
-      },
-      {
-        name: 'Khory',
-        image: './image/abc.jpg',
         age: 'tbd',
-        hometown: 'tbd',
-        major: 'tbd',
-      },
-      {
-        name: 'Perry',
-        image: './image/abc.jpg',
-        age: 'tbd',
-        hometown: 'tbd',
-        major: 'tbd',
+        power: 'tbd',
+        speed: 'tbd',
       },
       {
         name: 'Andrew',
         image: './image/abc.jpg',
         age: 'tbd',
-        hometown: 'tbd',
-        major: 'tbd',
+        power: 'tbd',
+        speed: 'tbd',
+      },
+      {
+        name: 'Perry',
+        image: './image/abc.jpg',
+        age: 'tbd',
+        power: 'tbd',
+        speed: 'tbd',
+      },
+      {
+        name: 'Khory',
+        image: './image/abc.jpg',
+        age: 'tbd',
+        power: 'tbd',
+        speed: 'tbd',
       },
     ];
-    this.name = '1';
-    this.image = '2';
-    this.age = '3';
-    this.powernum = '4';
-    this.power = '5';
   }
 
   // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
@@ -55,11 +50,6 @@ export class TrainingCard extends LitElement {
     return {
       need: { type: String, reflect: true },
       cardData: { type: Array },
-      name: { type: String },
-      image: { type: String },
-      age: { type: String },
-      powernum: { type: String },
-      power: { type: String },
     };
   }
 
@@ -109,9 +99,15 @@ export class TrainingCard extends LitElement {
   // HTML - specific to Lit
   render() {
     return html`
-      <h1>Make me awesome</h1>
       <ul>
-        ${this.cardData.map(item => html`<li>${item.name}</li>`)}
+        ${this.cardData.map(
+          item =>
+            html`<h1>Name: ${item.name}</h1>
+              <div>${item.image}</div>
+              <div>Age: ${item.age}</div>
+              <div>Power: ${item.power}</div>
+              <div>Speed: ${item.speed}</div>`
+        )}
       </ul>
       <slot></slot>
     `;
