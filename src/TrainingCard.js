@@ -16,24 +16,24 @@ export class TrainingCard extends LitElement {
     this.cardData = [
       {
         name: 'Ethan',
-        image: './image/abc.jpg',
-        age: 'tbd',
-        power: 'tbd',
-        speed: 'tbd',
+        image: 'https://www.w3schools.com/images/w3schools_green.jpg',
+        age: '20',
+        power: '85',
+        speed: '99',
       },
       {
         name: 'Andrew',
         image: './image/abc.jpg',
-        age: 'tbd',
-        power: 'tbd',
-        speed: 'tbd',
+        age: '21',
+        power: '10',
+        speed: '16',
       },
       {
         name: 'Perry',
         image: './image/abc.jpg',
-        age: 'tbd',
-        power: 'tbd',
-        speed: 'tbd',
+        age: '23',
+        power: '50',
+        speed: '78',
       },
       {
         name: 'Khory',
@@ -103,7 +103,7 @@ export class TrainingCard extends LitElement {
         ${this.cardData.map(
           item =>
             html`<h1>Name: ${item.name}</h1>
-              <div>${item.image}</div>
+              <img src=${item.image} alt="W3Schools.com" />
               <div>Age: ${item.age}</div>
               <div>Power: ${item.power}</div>
               <div>Speed: ${item.speed}</div>`
