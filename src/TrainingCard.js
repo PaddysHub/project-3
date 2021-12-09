@@ -12,7 +12,6 @@ export class TrainingCard extends LitElement {
   // HTMLElement life-cycle, built in; use this for setting defaults
   constructor() {
     super();
-    this.need = 'all need to succeed';
     this.cardData = [
       {
         name: 'Ethan',
