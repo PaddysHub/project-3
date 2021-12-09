@@ -37,7 +37,8 @@ export class TrainingCard extends LitElement {
       },
       {
         name: 'Khory',
-        image: './image/abc.jpg',
+        image:
+          'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fdarrahbrustein%2Ffiles%2F2019%2F01%2FShaq-Headshot-1-1200x900.jpg',
         age: 'tbd',
         power: 'tbd',
         speed: 'tbd',
@@ -88,10 +89,22 @@ export class TrainingCard extends LitElement {
     return css`
       :host {
         display: block;
+        border: 4px solid #8b8b8b;
       }
       :host([need='joy']) {
         color: yellow;
         background-color: black;
+      }
+
+      img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
       }
     `;
   }
