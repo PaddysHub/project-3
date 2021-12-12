@@ -86,12 +86,10 @@ export class CardData extends LitElement {
   static get styles() {
     return css`
       :host {
-        display: block;
-        border: 4px solid #8b8b8b;
-      }
-      :host([need='joy']) {
         color: yellow;
         background-color: black;
+        display: block;
+        border: 4px solid #8b8b8b;
       }
 
       img {
