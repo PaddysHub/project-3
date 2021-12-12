@@ -35,8 +35,20 @@ export class TrainingCard extends LitElement {
   // updated fires every time a property defined above changes
   // this allows you to react to variables changing and use javascript to perform logic
   updated(changedProperties) {
-    changedProperties.forEach((oldValue, propName) => {
-      if (propName === 'need' && this[propName] === 'andrew') {
+    changedProperties.forEach((oldValue, card) => {
+      if (card === 'need' && this[card] === 'ethan') {
+        this.cardData = [
+          {
+            name: 'Ethan',
+            image:
+              'https://img.dtcn.com/image/themanual/bill-murray-in-his-william-murray-gofl-clothing-768x460.jpg',
+            age: '20',
+            power: '85',
+            speed: '99',
+          },
+        ];
+      }
+      if (card === 'need' && this[card] === 'andrew') {
         this.cardData = [
           {
             name: 'Andrew',
@@ -48,7 +60,7 @@ export class TrainingCard extends LitElement {
           },
         ];
       }
-      if (propName === 'need' && this[propName] === 'perry') {
+      if (card === 'need' && this[card] === 'perry') {
         this.cardData = [
           {
             name: 'Perry',
@@ -61,7 +73,7 @@ export class TrainingCard extends LitElement {
         ];
       }
 
-      if (propName === 'need' && this[propName] === 'khory') {
+      if (card === 'need' && this[card] === 'khory') {
         this.cardData = [
           {
             name: 'Khory',
@@ -103,7 +115,7 @@ export class TrainingCard extends LitElement {
         display: block;
         border: 4px solid #8b8b8b;
       }
-      :host([need='joy']) {
+      :host([need='ethan']) {
         color: yellow;
         background-color: black;
       }
