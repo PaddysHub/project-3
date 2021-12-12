@@ -115,6 +115,8 @@ export class TrainingCard extends LitElement {
         display: block;
         border: 4px solid #8b8b8b;
         margin-bottom: 20px;
+        width: 500px;
+        height: 500px;
       }
       :host([need='ethan']) {
         color: yellow;
