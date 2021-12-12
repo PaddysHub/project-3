@@ -43,8 +43,8 @@ export class TrainingCard extends LitElement {
             image:
               'https://i.pinimg.com/564x/47/a6/80/47a6801c4fa9a70279f5b71d35567303.jpg',
             age: '21',
-            power: '10',
-            speed: '16',
+            power: '99',
+            speed: '99',
           },
         ];
       }
@@ -102,6 +102,7 @@ export class TrainingCard extends LitElement {
       :host {
         display: block;
         border: 4px solid #8b8b8b;
+        margin-bottom: 20px;
       }
       :host([need='joy']) {
         color: yellow;
@@ -127,7 +128,7 @@ export class TrainingCard extends LitElement {
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
-        width: 150px;
+        width: 100px;
         display: block;
         margin-left: auto;
         margin-right: auto;
