@@ -21,29 +21,6 @@ export class TrainingCard extends LitElement {
         power: '85',
         speed: '99',
       },
-      {
-        name: 'Andrew',
-        image:
-          'https://i.pinimg.com/564x/47/a6/80/47a6801c4fa9a70279f5b71d35567303.jpg',
-        age: '21',
-        power: '10',
-        speed: '16',
-      },
-      {
-        name: 'Perry',
-        image: './image/abc.jpg',
-        age: '23',
-        power: '50',
-        speed: '78',
-      },
-      {
-        name: 'Khory',
-        image:
-          'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fdarrahbrustein%2Ffiles%2F2019%2F01%2FShaq-Headshot-1-1200x900.jpg',
-        age: 'tbd',
-        power: 'tbd',
-        speed: 'tbd',
-      },
     ];
   }
 
@@ -59,8 +36,42 @@ export class TrainingCard extends LitElement {
   // this allows you to react to variables changing and use javascript to perform logic
   updated(changedProperties) {
     changedProperties.forEach((oldValue, propName) => {
-      if (propName === 'need' && this[propName] === 'joy') {
-        this.classList.add('joyful');
+      if (propName === 'need' && this[propName] === 'andrew') {
+        this.cardData = [
+          {
+            name: 'Andrew',
+            image:
+              'https://i.pinimg.com/564x/47/a6/80/47a6801c4fa9a70279f5b71d35567303.jpg',
+            age: '21',
+            power: '10',
+            speed: '16',
+          },
+        ];
+      }
+      if (propName === 'need' && this[propName] === 'perry') {
+        this.cardData = [
+          {
+            name: 'Perry',
+            image:
+              'https://imagez.tmz.com/image/67/o/2021/12/10/67bdbda0b8dc4972b2b0e82402bf94f1_md.jpg',
+            age: '23',
+            power: '50',
+            speed: '78',
+          },
+        ];
+      }
+
+      if (propName === 'need' && this[propName] === 'khory') {
+        this.cardData = [
+          {
+            name: 'Khory',
+            image:
+              'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fdarrahbrustein%2Ffiles%2F2019%2F01%2FShaq-Headshot-1-1200x900.jpg',
+            age: 'tbd',
+            power: 'tbd',
+            speed: 'tbd',
+          },
+        ];
       }
     });
   }
@@ -95,6 +106,21 @@ export class TrainingCard extends LitElement {
       :host([need='joy']) {
         color: yellow;
         background-color: black;
+      }
+
+      :host([need='andrew']) {
+        color: white;
+        background-color: green;
+      }
+
+      :host([need='perry']) {
+        color: orange;
+        background-color: brown;
+      }
+
+      :host([need='khory']) {
+        color: white;
+        background-color: blue;
       }
 
       img {
