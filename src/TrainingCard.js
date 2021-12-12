@@ -116,11 +116,11 @@ export class TrainingCard extends LitElement {
       <ul>
         ${this.cardData.map(
           item =>
-            html`<h1>Name: ${item.name}</h1>
+            html`<h1>${item.name}</h1>
               <img src=${item.image} alt="characterIcon" />
-              <div>Age: ${item.age}</div>
-              <div>Power: ${item.power}</div>
-              <div>Speed: ${item.speed}</div>`
+              <div>Age ${item.age}</div>
+              <div>Power ${item.power}</div>
+              <div>Speed ${item.speed}</div>`
         )}
       </ul>
       <slot></slot>
