@@ -140,13 +140,12 @@ export class TrainingCard extends LitElement {
 
       img {
         border: 1px solid #ddd;
-        border-radius: 4px;
+
         padding: 5px;
-        width: 100px;
+        width: 450px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 20%;
       }
     `;
   }
