@@ -79,9 +79,9 @@ export class TrainingCard extends LitElement {
             name: 'Khory',
             image:
               'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fdarrahbrustein%2Ffiles%2F2019%2F01%2FShaq-Headshot-1-1200x900.jpg',
-            age: 'tbd',
-            power: 'tbd',
-            speed: 'tbd',
+            age: '21',
+            power: '75',
+            speed: '80',
           },
         ];
       }
