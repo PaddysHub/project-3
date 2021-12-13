@@ -1,6 +1,5 @@
 // dependencies / things imported
 import { LitElement, html, css } from 'lit';
-
 // EXPORT (so make available to other documents that reference this file) a class, that extends LitElement
 // which has the magic life-cycles and developer experience below added
 export class TrainingCard extends LitElement {
@@ -114,10 +113,12 @@ export class TrainingCard extends LitElement {
       :host {
         display: block;
         border: 4px solid #8b8b8b;
-        margin-bottom: 20px;
-        width: 500px;
+        margin: 200px;
+        width: 400px;
         height: 500px;
+        padding: 5px;
       }
+
       :host([need='ethan']) {
         color: yellow;
         background-color: black;
@@ -140,12 +141,10 @@ export class TrainingCard extends LitElement {
 
       img {
         border: 1px solid #ddd;
-
         padding: 5px;
         width: 450px;
+        height: 300px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
       }
     `;
   }
