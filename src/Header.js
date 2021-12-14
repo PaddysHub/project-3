@@ -5,7 +5,7 @@ import { LitElement, html, css } from 'lit';
 export class Header extends LitElement {
   // a convention I enjoy so you can change the tag name in 1 place
   static get tag() {
-    return 'rename-me';
+    return 'trading-card';
   }
 
   // HTMLElement life-cycle, built in; use this for setting defaults
@@ -172,6 +172,7 @@ export class Header extends LitElement {
    * haxProperties integration via file reference
    */
   static get haxProperties() {
-    return new URL(`../lib/rename-me.haxProperties.json`, import.meta.url).href;
+    return new URL(`../lib/trading-card.haxProperties.json`, import.meta.url)
+      .href;
   }
 }

@@ -5,7 +5,7 @@ import { LitElement, html, css } from 'lit';
 export class TrainingCard extends LitElement {
   // a convention I enjoy so you can change the tag name in 1 place
   static get tag() {
-    return 'rename-me';
+    return 'trading-card';
   }
 
   // HTMLElement life-cycle, built in; use this for setting defaults
