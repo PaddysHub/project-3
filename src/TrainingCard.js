@@ -114,8 +114,8 @@ export class TrainingCard extends LitElement {
         display: block;
         border: 4px solid #8b8b8b;
         margin: 100px;
-        height: 500px;
-        width: 400px;
+        height: 50%;
+        width: 40%;
         padding: 5px;
       }
 
@@ -141,7 +141,7 @@ export class TrainingCard extends LitElement {
 
       img {
         padding: 5px;
-        width: 350px;
+        width: 98%;
         height: 250px;
         display: block;
         align-content: center;
