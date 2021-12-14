@@ -113,9 +113,9 @@ export class TrainingCard extends LitElement {
       :host {
         display: block;
         border: 4px solid #8b8b8b;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+        margin: 100px;
+        height: 500px;
+        width: 400px;
         padding: 5px;
       }
 
@@ -142,8 +142,8 @@ export class TrainingCard extends LitElement {
       img {
         border: 1px solid #ddd;
         padding: 5px;
-        width: 450px;
-        height: 300px;
+        width: 350px;
+        height: 250px;
         display: block;
       }
     `;
