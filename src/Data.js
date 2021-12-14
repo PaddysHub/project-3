@@ -1,9 +1,11 @@
 // dependencies / things imported
-import { html, css } from 'lit';
-import { SimpleColors } from '@lrnwebcomponents/simple-colors/simple-colors';
+import { LitElement, html, css } from 'lit';
+import '@lrnwebcomponents/simple-icon/lib/simple-icon-lite.js';
+import '@lrnwebcomponents/simple-icon/lib/simple-icons.js';
+
 // EXPORT (so make available to other documents that reference this file) a class, that extends LitElement
 // which has the magic life-cycles and developer experience below added
-export class Data extends SimpleColors {
+export class Data extends LitElement {
   // a convention I enjoy so you can change the tag name in 1 place
   static get tag() {
     return 'data';
@@ -71,6 +73,7 @@ export class Data extends SimpleColors {
    * haxProperties integration via file reference
    */
   static get haxProperties() {
-    return new URL(`../lib/rename-me.haxProperties.json`, import.meta.url).href;
+    return new URL(`../lib/trading-card.haxProperties.json`, import.meta.url)
+      .href;
   }
 }

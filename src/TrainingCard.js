@@ -1,5 +1,7 @@
 // dependencies / things imported
 import { LitElement, html, css } from 'lit';
+import '@lrnwebcomponents/simple-icon/lib/simple-icon-lite.js';
+import '@lrnwebcomponents/simple-icon/lib/simple-icons.js';
 // EXPORT (so make available to other documents that reference this file) a class, that extends LitElement
 // which has the magic life-cycles and developer experience below added
 export class TrainingCard extends LitElement {
@@ -157,9 +159,22 @@ export class TrainingCard extends LitElement {
           item =>
             html`<h1>${item.name}</h1>
               <img src=${item.image} alt="characterIcon" />
-              <div>Age ${item.age}</div>
-              <div>Power ${item.power}</div>
-              <div>Speed ${item.speed}</div>`
+              <div>
+                <simple-icon-lite
+                  icon="device:brightness-auto"
+                ></simple-icon-lite>
+                Age ${item.age}
+              </div>
+              <div>
+                <simple-icon-lite
+                  icon="places:fitness-center"
+                ></simple-icon-lite>
+                Power ${item.power}
+              </div>
+              <div>
+                <simple-icon-lite icon="maps:directions-run"></simple-icon-lite>
+                Speed ${item.speed}
+              </div>`
         )}
       </slot>
     `;
