@@ -14,8 +14,7 @@ export class Data extends LitElement {
   // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
   static get properties() {
     return {
-      attribute: { type: String, reflect: true },
-      characterData: { type: String },
+      attribute: { type: String },
     };
   }
 
@@ -34,7 +33,11 @@ export class Data extends LitElement {
 
   // HTML - specific to Lit
   render() {
-    return html` <slot> ${this.attribute} </slot> `;
+    return html`
+      <div>
+        <slot> ${this.name} </slot>
+      </div>
+    `;
   }
 
   // HAX specific callback

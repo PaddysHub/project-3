@@ -161,7 +161,7 @@ export class TrainingCard extends LitElement {
       <slot>
         ${this.cardData.map(
           item =>
-            html`<h1>${item.name}</h1>
+            html` <h1 style="text-align:center">${item.name}</h1>
               <img src=${item.image} alt="characterIcon" />
               <div>
                 <simple-icon-lite
