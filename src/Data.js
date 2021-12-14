@@ -14,7 +14,7 @@ export class Data extends LitElement {
   // properties that you wish to use as data in HTML, CSS, and the updated life-cycle
   static get properties() {
     return {
-      need: { type: String, reflect: true },
+      attribute: { type: String, reflect: true },
       characterData: { type: String },
     };
   }
@@ -22,25 +22,7 @@ export class Data extends LitElement {
   // CSS - specific to Lit
   static get styles() {
     return css`
-      :host {
-        display: flex;
-        align-items: center;
-        background-color: white;
-        justify-content: left;
-        height: 410px;
-        width: 280px;
-        margin: 10px;
-      }
-
       .word {
-        text-transform: uppercase;
-        text-align: left;
-        color: var(--simple-colors-default-theme-accent-7);
-        margin: 0px;
-        font-size: 12px;
-      }
-
-      .num {
         text-transform: uppercase;
         text-align: right;
         color: var(--simple-colors-default-theme-accent-7);
@@ -52,19 +34,7 @@ export class Data extends LitElement {
 
   // HTML - specific to Lit
   render() {
-    return html`
-      <ul>
-        ${this.cardData.map(
-          item =>
-            html`<h1>${item.name}</h1>
-              <img src=${item.image} alt="characterIcon" />
-              <div>Age ${item.age}</div>
-              <div>Power ${item.power}</div>
-              <div>Speed ${item.speed}</div>`
-        )}
-      </ul>
-      <slot></slot>
-    `;
+    return html` <slot> ${this.attribute} </slot> `;
   }
 
   // HAX specific callback

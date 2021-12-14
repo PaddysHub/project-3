@@ -114,7 +114,6 @@ export class TrainingCard extends LitElement {
     return css`
       :host {
         display: block;
-        border: 4px solid #8b8b8b;
         margin: 100px;
         height: 50%;
         width: 40%;
@@ -124,21 +123,25 @@ export class TrainingCard extends LitElement {
       :host([need='ethan']) {
         color: yellow;
         background-color: black;
+        border: solid 2px yellow;
       }
 
       :host([need='andrew']) {
         color: white;
         background-color: green;
+        border: solid 2px black;
       }
 
       :host([need='perry']) {
         color: orange;
         background-color: brown;
+        border: solid 2px orange;
       }
 
       :host([need='khory']) {
         color: white;
         background-color: blue;
+        border: solid 2px black;
       }
 
       img {
