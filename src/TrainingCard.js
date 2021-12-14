@@ -2,6 +2,7 @@
 import { LitElement, html, css } from 'lit';
 import '@lrnwebcomponents/simple-icon/lib/simple-icon-lite.js';
 import '@lrnwebcomponents/simple-icon/lib/simple-icons.js';
+import './Header.js';
 // EXPORT (so make available to other documents that reference this file) a class, that extends LitElement
 // which has the magic life-cycles and developer experience below added
 export class TrainingCard extends LitElement {
