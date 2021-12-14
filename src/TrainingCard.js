@@ -163,21 +163,24 @@ export class TrainingCard extends LitElement {
           item =>
             html` <h1 style="text-align:center">${item.name}</h1>
               <img src=${item.image} alt="characterIcon" />
-              <div>
+              <div style="text-align:left;">
                 <simple-icon-lite
                   icon="device:brightness-auto"
                 ></simple-icon-lite>
-                Age ${item.age}
+                Age:
+                <span style="float:right;"> ${item.age} </span>
               </div>
-              <div>
+              <div style="text-align:left;">
                 <simple-icon-lite
                   icon="places:fitness-center"
                 ></simple-icon-lite>
-                Power ${item.power}
+                Power:
+                <span style="float:right;"> ${item.power} </span>
               </div>
-              <div>
+              <div style="text-align:left;">
                 <simple-icon-lite icon="maps:directions-run"></simple-icon-lite>
-                Speed ${item.speed}
+                Speed:
+                <span style="float:right;"> ${item.speed} </span>
               </div>`
         )}
       </slot>
