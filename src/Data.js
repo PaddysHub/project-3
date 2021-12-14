@@ -45,14 +45,6 @@ export class Data extends SimpleColors {
         margin: 0px;
         font-size: 12px;
       }
-
-      .container {
-        display: grid;
-        height: 4vh;
-        border: 3px black;
-        grid-template-columns: 10fr 10fr;
-        border-bottom: 3px;
-      }
     `;
   }
 
