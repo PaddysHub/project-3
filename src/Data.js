@@ -71,6 +71,7 @@ export class Data extends SimpleColors {
    * haxProperties integration via file reference
    */
   static get haxProperties() {
-    return new URL(`../lib/rename-me.haxProperties.json`, import.meta.url).href;
+    return new URL(`../lib/trading-card.haxProperties.json`, import.meta.url)
+      .href;
   }
 }

@@ -10,7 +10,7 @@ export default {
   },
 };
 
-function Template({ need = 'rename', slot }) {
+function Template({ need = 'trading card', slot }) {
   return html` <trading-card need="${need}"> ${slot} </trading-card> `;
 }
 export const Card = Template.bind({});
