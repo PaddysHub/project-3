@@ -152,7 +152,7 @@ export class TrainingCard extends LitElement {
   // HTML - specific to Lit
   render() {
     return html`
-      <ul>
+      <slot>
         ${this.cardData.map(
           item =>
             html`<h1>${item.name}</h1>
@@ -161,8 +161,7 @@ export class TrainingCard extends LitElement {
               <div>Power ${item.power}</div>
               <div>Speed ${item.speed}</div>`
         )}
-      </ul>
-      <slot></slot>
+      </slot>
     `;
   }
 
