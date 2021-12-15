@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Put your description here.">
   <base href="/">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fredoka+One&family=Vollkorn&display=swap" rel="stylesheet">
   <style>
     html,
@@ -39,12 +40,39 @@
     <li><a href="#">Trading Card demo</a></li>
     <li><a href="/hax.html">HAX, card demo</a></li>
   </ul>
-  <div class="wrapper">
-    <trading-card need="ethan"></trading-card>
-    <trading-card need="andrew"></trading-card>
-    <trading-card need="perry"></trading-card>
-    <trading-card need="khory"></trading-card>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <trading-card need="ethan"></trading-card>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <trading-card need="andrew"></trading-card> 
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <trading-card need="perry"></trading-card>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <trading-card need="khory"></trading-card>
+        </div>
+      </div>
+    </div>
   </div>
+  <!-- <div class="wrapper">
+
+  </div> -->
   <script type="module">
     import "./trading-card.js";
     // import "@lrnwebcomponents/word-count/word-count.js";
