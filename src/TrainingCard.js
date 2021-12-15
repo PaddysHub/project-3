@@ -152,6 +152,45 @@ export class TrainingCard extends LitElement {
         display: block;
         align-content: center;
       }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 500px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-back {
+        background-color: transparent;
+        color: white;
+        transform: rotateY(180deg);
+      }
     `;
   }
 
@@ -161,27 +200,42 @@ export class TrainingCard extends LitElement {
       <slot>
         ${this.cardData.map(
           item =>
-            html` <h1 style="text-align:center">${item.name}</h1>
-              <img src=${item.image} alt="characterIcon" />
-              <div style="text-align:left;">
-                <simple-icon-lite
-                  icon="device:brightness-auto"
-                ></simple-icon-lite>
-                Age:
-                <span style="float:right;"> ${item.age} </span>
+            html`
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h1 style="text-align:center">${item.name}</h1>
+                    <img src=${item.image} alt="characterIcon" />
+                    <div style="text-align:left;">
+                      <simple-icon-lite
+                        icon="device:brightness-auto"
+                      ></simple-icon-lite>
+                      Age:
+                      <span style="float:right;"> ${item.age} </span>
+                    </div>
+                    <div style="text-align:left;">
+                      <simple-icon-lite
+                        icon="places:fitness-center"
+                      ></simple-icon-lite>
+                      Power:
+                      <span style="float:right;"> ${item.power} </span>
+                    </div>
+                    <div style="text-align:left;">
+                      <simple-icon-lite
+                        icon="maps:directions-run"
+                      ></simple-icon-lite>
+                      Speed:
+                      <span style="float:right;"> ${item.speed} </span>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Card made by:</h1>
+                    <img src=${item.image} alt="characterIcon" />
+                    <p>PaddysHub</p>
+                  </div>
+                </div>
               </div>
-              <div style="text-align:left;">
-                <simple-icon-lite
-                  icon="places:fitness-center"
-                ></simple-icon-lite>
-                Power:
-                <span style="float:right;"> ${item.power} </span>
-              </div>
-              <div style="text-align:left;">
-                <simple-icon-lite icon="maps:directions-run"></simple-icon-lite>
-                Speed:
-                <span style="float:right;"> ${item.speed} </span>
-              </div>`
+            `
         )}
       </slot>
     `;
@@ -193,6 +247,7 @@ export class TrainingCard extends LitElement {
    * haxProperties integration via file reference
    */
   static get haxProperties() {
-    return new URL(`../lib/rename-me.haxProperties.json`, import.meta.url).href;
+    return new URL(`../lib/trading-card.haxProperties.json`, import.meta.url)
+      .href;
   }
 }

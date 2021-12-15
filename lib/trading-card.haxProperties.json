@@ -1,10 +1,10 @@
 {
-    "canScale": false,
-    "canPosition": false,
+    "canScale": true,
+    "canPosition": true,
     "canEditSource": true,
     "contentEditable": true,
     "gizmo": {
-      "title": "Rename me",
+      "title": "Trading Card",
       "description": "An element to improve the future of education",
       "icon": "credit-card",
       "color": "blue",
