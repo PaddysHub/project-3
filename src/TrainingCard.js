@@ -171,6 +171,7 @@ export class TrainingCard extends LitElement {
         transition: transform 0.6s;
         transform-style: preserve-3d;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        line-height: 2.5;
       }
 
       .flip-card:hover .flip-card-inner {
