@@ -124,25 +124,25 @@ export class TrainingCard extends LitElement {
       :host([need='ethan']) {
         color: yellow;
         background-color: black;
-        border: solid 2px yellow;
+        border: solid 5px yellow;
       }
 
       :host([need='andrew']) {
         color: white;
         background-color: green;
-        border: solid 2px black;
+        border: solid 5px black;
       }
 
       :host([need='perry']) {
         color: orange;
         background-color: brown;
-        border: solid 2px orange;
+        border: solid 5px orange;
       }
 
       :host([need='khory']) {
         color: white;
         background-color: blue;
-        border: solid 2px black;
+        border: solid 5px black;
       }
 
       img {
@@ -171,7 +171,7 @@ export class TrainingCard extends LitElement {
         transition: transform 0.6s;
         transform-style: preserve-3d;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        line-height: 2.5;
+        line-height: 2.35;
       }
 
       .flip-card:hover .flip-card-inner {
@@ -188,7 +188,9 @@ export class TrainingCard extends LitElement {
       }
 
       .flip-card-back {
-        background-color: transparent;
+        background-image: url(assets/cardback.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         color: white;
         transform: rotateY(180deg);
       }
@@ -205,23 +207,25 @@ export class TrainingCard extends LitElement {
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <h1 style="text-align:center">${item.name}</h1>
+                    <h1 style="text-align:center; border: 2px double white;">
+                      ${item.name}
+                    </h1>
                     <img src=${item.image} alt="characterIcon" />
-                    <div style="text-align:left;">
+                    <div style="text-align:left; border: 2px double white;">
                       <simple-icon-lite
                         icon="device:brightness-auto"
                       ></simple-icon-lite>
                       Age:
                       <span style="float:right;"> ${item.age} </span>
                     </div>
-                    <div style="text-align:left;">
+                    <div style="text-align:left; border: 2px double white;">
                       <simple-icon-lite
                         icon="places:fitness-center"
                       ></simple-icon-lite>
                       Power:
                       <span style="float:right;"> ${item.power} </span>
                     </div>
-                    <div style="text-align:left;">
+                    <div style="text-align:left;; border: 2px double white;">
                       <simple-icon-lite
                         icon="maps:directions-run"
                       ></simple-icon-lite>
