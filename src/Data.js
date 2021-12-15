@@ -1,3 +1,5 @@
+// We were trying to use this file to align our data to the right of the card as seen below in get styles()
+
 // dependencies / things imported
 import { LitElement, html, css } from 'lit';
 import '@lrnwebcomponents/simple-icon/lib/simple-icon-lite.js';

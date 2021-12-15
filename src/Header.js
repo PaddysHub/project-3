@@ -1,3 +1,5 @@
+// We tried to use this file to create a class for our header that would style it.
+
 // dependencies / things imported
 import { html, css } from 'lit';
 import { SimpleColors } from '@lrnwebcomponents/simple-colors/simple-colors.js';
