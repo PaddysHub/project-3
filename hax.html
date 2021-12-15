@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Put your description here.">
   <base href="/">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
   <style>
     html,
@@ -13,8 +15,8 @@
       font-family: sans-serif;
     }
     .hax-wrapper {
-      margin: 100px;
-      padding: 50px;
+      margin: 200px;
+      padding: 200px;
     }
     .menu {
       display: flex;
@@ -55,9 +57,12 @@
     <h-a-x app-store='{"url": "assets/appstore.json"}' element-align="right">
       
       
-      <p data-hax-grid="" role="textbox">Stuff and thigns</p>
+      <p data-hax-grid="" role="">Stuff and thigns</p>
+      <div class="card">
+        <trading-card need="ethan"></trading-card>
+      </div>
 
-      <trading-card need=""></trading-card>
+
 
       <p data-hax-grid="" role="textbox">Another block of text below that</p>
 
@@ -102,13 +107,9 @@
       
       
       </grid-plate>
-      
-      
+
       <trading-card value="This is editable" need="ethan"></trading-card>
-      <trading-card value="This is editable" need="andrew"></trading-card>
-      <trading-card value="This is editable" need="perry"></trading-card>
-      <trading-card value="This is editable" need="khory"></trading-card>
-      
+
       
       <p data-hax-grid="">Cool stuff. Let's write about spongebob!</p>
       

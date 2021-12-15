@@ -115,9 +115,8 @@ export class TrainingCard extends LitElement {
     return css`
       :host {
         display: block;
-        margin: 100px;
         height: 50%;
-        width: 40%;
+        width: 100%;
         padding: 5px;
       }
 
@@ -176,6 +175,7 @@ export class TrainingCard extends LitElement {
 
       .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg);
+        cursor: pointer;
       }
 
       .flip-card-front,
